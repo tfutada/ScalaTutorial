@@ -1,5 +1,5 @@
 
-object S10HighOrder {
+object S09HighOrder {
 
     def main(args: Array[String]) = {
 
