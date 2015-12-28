@@ -1,5 +1,5 @@
 
-object HelloWorld {
+object S08Closure {
 
     def main(args: Array[String]) = {
 
@@ -8,7 +8,7 @@ object HelloWorld {
             // return a func with a count
             () => {
                 count += 1
-                count
+                count // return count
             }
         }
         val f1 = createCounter() // return a function

@@ -6,9 +6,9 @@ object S07Function {
     }
 
     // lambda: String => Unit
-    def ajax(callback: (String, String, String) => Unit, count: Int): Unit = {
+    def ajax(callback: String => Unit, count: Int): Unit = {
         for (i <- 1 to count) {
-            callback("Hello", "a", "j")
+            callback("Hello")
         }
     }
 
@@ -16,7 +16,7 @@ object S07Function {
 
         println( sum(1, 2) )
 
-        ajax( (s, a, b) => println(s), 3 )
+        ajax( e => println(e), 3 )
     }
 }
 
