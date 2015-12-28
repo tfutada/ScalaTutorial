@@ -11,13 +11,14 @@ object S12Case {
 
         for (o <- List(iphone, android, ms)) {
             o match {
-                case Mobile(n, "Apple", _) => println("Im so crave for " + n)
+                case Mobile(n, "Apple", _) => println("I really crave for " + n)
                 case Mobile(_, "Samsung", p) if p < 150 => println("if it is cheap i buy Samsung at " + p)
                 case Mobile(_, _, _) => println("I don't care.")
             }
         }
     }
 }
+
 
 
 
